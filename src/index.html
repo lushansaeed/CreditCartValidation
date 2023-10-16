@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Credit Card Validator</title>
+</head>
+<body>
+
+
+<form id="validator-form">
+    <div class="validator">
+        <h1>Credit Card Validator</h1>
+        <label for="cc-number">Enter a 16-digit credit card number:</label>
+        <input type="text" id="cc-number" maxlength="19" required oninput="formatCreditCardInput(this)">
+        <p id="validation-result"></p>
+        <button type="button" onclick="validateCreditCard()">Validate</button>
+    </div>
+</form>
+
+
+<script src="script.js"></script>
+</body>
+</html>
